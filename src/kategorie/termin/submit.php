@@ -1,8 +1,5 @@
 <?php
-
-error_reporting(-1);
-ini_set('display_errors', 'On');
-set_error_handler("var_dump");
+mail('marlonkerth@icloud.com', "test", htmlspecialchars(stripslashes(trim($_POST['mail']))));
 
 if($_POST['mail'] != '') {
     $name = htmlspecialchars(stripslashes(trim($_POST['name'])));
