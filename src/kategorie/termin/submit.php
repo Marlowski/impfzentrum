@@ -1,13 +1,9 @@
 <?php
-mail('marlonkerth@icloud.com', "test", htmlspecialchars(stripslashes(trim($_POST['mail']))));
-
-if($_POST['mail'] != '') {
-    $name = htmlspecialchars(stripslashes(trim($_POST['name'])));
-    $email = htmlspecialchars(stripslashes(trim($_POST['mail'])));
-    $date = htmlspecialchars(stripslashes(trim($_POST['appointment'])));
-    $body = " Name: $name\n E-mail: $email\n Termin am:\n $date";
-    mail( '$email', 'Impfzentrum Berlin | Termin - ' . $date, $body);
-}
+$name = htmlspecialchars(stripslashes(trim($_POST['name'])));
+$email = htmlspecialchars(stripslashes(trim($_POST['mail'])));
+$date = htmlspecialchars(stripslashes(trim($_POST['appointment'])));
+$body = " Name: $name\n E-mail: $email\n Termin am:\n $date";
+mail( '$email', 'Impfzentrum Berlin | Termin - ' . $date, $body);
 ?>
 
 
