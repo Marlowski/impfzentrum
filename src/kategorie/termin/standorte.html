@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Marlon Kerth">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet">
+    <link rel="icon" href="../../assets/icons/iz-logo-icon.svg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <link href="../../styles/style.css" rel="stylesheet">
+    <!-- font (europa Adobe Font) -->
+    <link rel="stylesheet" href="https://use.typekit.net/jby6hqc.css">
+    <title>Impfzentrum Berlin | Standorte</title>
+</head>
+<body class="default-text-page title-start">
+<header class="dark-header">
+    <a class="nav-img-holder" href="../../index.html">
+        <img src="../../assets/icons/iz-logo-dark.svg" alt="Impfzentrum Berlin">
+    </a>
+    <ul class="nav-big-screen">
+        <li>
+            <a>Termine</a>
+            <div class="nav-dropdown">
+                <a>Termin buchen</a>
+                <a>Standorte / Öffnungszeiten</a>
+                <a>Auskunft</a>
+            </div>
+        </li>
+        <li>
+            <a>Impfstoff</a>
+            <div class="nav-dropdown">
+                <a>Vergleich</a>
+                <a>Verfügbarkeit</a>
+                <a>Wahlmöglichkeit</a>
+            </div>
+        </li>
+        <li>
+            <a>Impfung erhalten</a>
+            <div class="nav-dropdown">
+                <a>Prioritäten Gruppen</a>
+                <a>Vorerkrankungen</a>
+            </div>
+        </li>
+        <li>
+            <a>Symptome</a>
+            <div class="nav-dropdown">
+                <a>Gefahr für Altersgruppen</a>
+                <a>Symptome</a>
+                <a>Quarantäne</a>
+                <a>Schnelltests</a>
+                <a>Spätfolgen</a>
+            </div>
+        </li>
+        <li>
+            <a>Vorschriften</a>
+            <div class="nav-dropdown">
+                <a>Hygiene Hinweise</a>
+                <a>Einschränkungen</a>
+                <a>Verhaltensregeln</a>
+            </div>
+        </li>
+        <li>
+            <a>Inzidenzen</a>
+            <div class="nav-dropdown">
+                <a>Berlin</a>
+                <a>Deutschland</a>
+            </div>
+        </li>
+    </ul>
+    <div class="nav-small-screen">
+        <svg id="mobile-nav-menu-btn" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#DB876B"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    </div>
+    <ul id="mobil-dropdown-menu">
+        <li>Termin
+            <ul>
+                <li><a>Termin buchen</a></li>
+                <li><a>Standort / Öffnungszeiten</a></li>
+                <li><a>Auskunft</a></li>
+            </ul>
+        </li>
+        <li>Impfstoff
+            <ul>
+                <li><a>Vergleich</a></li>
+                <li><a>Verfügbarkeit</a></li>
+                <li><a>Wahlmöglichkeit</a></li>
+            </ul>
+        </li>
+        <li>Impfung erhalten
+            <ul>
+                <li><a>Prioritäten Gruppen</a></li>
+                <li><a>Vorerkrankungen</a></li>
+            </ul>
+        </li>
+        <li>Symptome
+            <ul>
+                <li><a>Gefahr für Altersgruppen</a></li>
+                <li><a>Symptome</a></li>
+                <li><a>Quarantäne</a></li>
+                <li><a>Schnelltests</a></li>
+                <li><a>Spätfolgen</a></li>
+            </ul>
+        </li>
+        <li>Vorschriften
+            <ul>
+                <li><a>Hygiene Hinweise</a></li>
+                <li><a>Einschränkungen</a></li>
+                <li><a>Verhaltensregeln</a></li>
+            </ul>
+        </li>
+        <li>Inzidenzen
+            <ul>
+                <li><a>Berlin</a></li>
+                <li><a>Deutschland</a></li>
+            </ul>
+        </li>
+    </ul>
+</header>
+<main>
+    <h1>Unsere Standorte & Öffnungszeiten</h1>
+    <div class="flex-box-wrapper">
+        <a href="https://www.google.de/maps/place/Schmargendorf,+Berlin/@52.4812288,13.2775936,13z/data=!4m5!3m4!1s0x47a850a42eb5ef11:0x801aefe5e4a5345e!8m2!3d52.4754245!4d13.2903006" target="_blank" class="flex-elem">
+            <div class="img-wrapper">
+                <img src="../../assets/map-location.png" alt="Location">
+            </div>
+            <h2>Schmargendorf</h2>
+            <div class="info-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm6-1.8C18 6.57 15.35 4 12 4s-6 2.57-6 6.2c0 2.34 1.95 5.44 6 9.14 4.05-3.7 6-6.8 6-9.14zM12 2c4.2 0 8 3.22 8 8.2 0 3.32-2.67 7.25-8 11.8-5.33-4.55-8-8.48-8-11.8C4 5.22 7.8 2 12 2z"/></svg>
+                <p>Straße 21, 12345 Berlin</p>
+            </div>
+            <div class="info-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <p>8:00 - 19:00 Uhr</p>
+            </div>
+            <div class="info-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57-.1-.04-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1z"/></svg>
+                <p>0123 456789</p>
+            </div>
+        </a>
+        <a  href="https://www.google.de/maps/place/Steglitz,+Berlin/@52.4810307,13.2745436,14z/data=!4m5!3m4!1s0x47a85a9a43b18fe1:0x52120465b5fad40!8m2!3d52.4530959!4d13.3311709" target="_blank" class="flex-elem">
+            <div class="img-wrapper">
+                <img src="../../assets/map-location.png" alt="Location">
+            </div>
+            <h2>Steglitz</h2>
+            <div class="info-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm6-1.8C18 6.57 15.35 4 12 4s-6 2.57-6 6.2c0 2.34 1.95 5.44 6 9.14 4.05-3.7 6-6.8 6-9.14zM12 2c4.2 0 8 3.22 8 8.2 0 3.32-2.67 7.25-8 11.8-5.33-4.55-8-8.48-8-11.8C4 5.22 7.8 2 12 2z"/></svg>
+                <p>Straße 21, 12345 Berlin</p>
+            </div>
+            <div class="info-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <p>8:00 - 19:00 Uhr</p>
+            </div>
+            <div class="info-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57-.1-.04-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1z"/></svg>
+                <p>0123 456789</p>
+            </div>
+        </a>
+        <a href="https://www.google.de/maps/place/Wedding,+Berlin/@52.5500746,13.3197142,14z/data=!3m1!4b1!4m5!3m4!1s0x47a8517f9595adcf:0x21c1863686e8ac40!8m2!3d52.5504827!4d13.3519841" target="_blank" class="flex-elem">
+            <div class="img-wrapper">
+                <img src="../../assets/map-location.png" alt="Location">
+            </div>
+            <h2>Wedding</h2>
+            <div class="info-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm6-1.8C18 6.57 15.35 4 12 4s-6 2.57-6 6.2c0 2.34 1.95 5.44 6 9.14 4.05-3.7 6-6.8 6-9.14zM12 2c4.2 0 8 3.22 8 8.2 0 3.32-2.67 7.25-8 11.8-5.33-4.55-8-8.48-8-11.8C4 5.22 7.8 2 12 2z"/></svg>
+                <p>Straße 21, 12345 Berlin</p>
+            </div>
+            <div class="info-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <p>8:00 - 19:00 Uhr</p>
+            </div>
+            <div class="info-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57-.1-.04-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1z"/></svg>
+                <p>0123 456789</p>
+            </div>
+        </a>
+    </div>
+</main>
+<footer>
+    <a href="../../impressum.html">Impressum</a>
+    <a href="../../datenschutz.html">Datenschutz</a>
+</footer>
+</body>
+</html>

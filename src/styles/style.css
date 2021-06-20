@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -352,8 +353,186 @@ header.dark-header .nav-big-screen li a {
 .default-text-page main article div {
   margin: 10px 0;
 }
-.default-text-page main article h1 {
+
+/* list style boxes */
+.flex-box-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.flex-box-wrapper .flex-elem {
+  flex: 0 0 20em;
+  max-width: 98%;
+  margin: 10px;
+  padding-bottom: 15px;
+  height: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: #fff;
+  background-color: var(--lightColor);
+}
+.flex-box-wrapper .flex-elem h2 {
+  padding: 0 15px;
+  margin-top: 15px;
+  color: var(--darkColor);
+}
+.flex-box-wrapper .flex-elem .info-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px 0;
+  padding: 0 15px;
+}
+.flex-box-wrapper .flex-elem .info-wrapper svg {
+  margin-right: 10px;
+  fill: var(--darkColor);
+}
+.flex-box-wrapper .flex-elem .img-wrapper {
+  width: 100%;
+  overflow: hidden;
+  height: 200px;
+}
+.flex-box-wrapper .flex-elem .img-wrapper img {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 350px;
+}
+
+/* title starts */
+.title-start h1:first-of-type {
   color: var(--lightColor);
+  margin-bottom: 30px;
+}
+
+/* tables */
+.table-combiner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.table-container {
+  flex: 1 1 15em;
+  list-style-position: inside;
+}
+.table-container li {
+  position: relative;
+  padding: 10px 10px 10px 25px;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.table-container h4 {
+  position: relative;
+  margin-bottom: 10px;
+}
+.table-container h4::before {
+  content: "•";
+  font-size: 1.5rem;
+  margin-right: 15px;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.table-container li:first-of-type {
+  padding: 10px;
+  position: relative;
+  background-color: var(--darkColor);
+  color: #ffffff;
+}
+.table-container li:first-of-type .triangle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  background-color: var(--lightColor);
+  clip-path: polygon(0 50%, 100% 100%, 100% 0);
+}
+.table-container li:nth-of-type(2n) {
+  background-color: var(--whiteColor);
+}
+.table-container img {
+  width: 15px;
+  margin: 0 10px;
+}
+.table-container a {
+  color: var(--accentColor);
+  transition: color 0.2s ease-in-out;
+}
+.table-container a:hover {
+  color: var(--accentColorHover);
+}
+
+/* Box Layout */
+.box-layout-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.box-layout-container .box-elem {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 0 0 17em;
+  position: relative;
+  width: 17em;
+  height: 17em;
+  margin: 20px;
+  padding: 20px 7px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+.box-layout-container .box-elem.avialable {
+  background-color: #4cbb00;
+}
+.box-layout-container .box-elem.empty {
+  background-color: #b30000;
+}
+.box-layout-container .box-elem h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.box-layout-container .box-elem div {
+  margin: 15px 0;
+}
+.box-layout-container .box-elem img {
+  filter: brightness(0) invert(1);
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 20px 0;
+}
+.box-layout-container .box-elem .hover-container {
+  margin: 0;
+  top: 0;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: var(--darkColor);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.box-layout-container .box-elem:hover .hover-container {
+  opacity: 1;
+}
+.box-layout-container .box-elem a.mobil {
+  display: none;
+  margin: 5px 0;
 }
 
 @media screen and (max-width: 500px) {
@@ -364,6 +543,14 @@ header.dark-header .nav-big-screen li a {
 
   .default-text-page main {
     padding: 20px 25px;
+  }
+
+  .box-layout-container .box-elem .hover-container {
+    display: none;
+  }
+
+  .box-layout-container .box-elem a.mobil {
+    display: block;
   }
 }
 footer {
@@ -446,6 +633,10 @@ footer a:hover {
 .form-input-wrapper.radio .actual-label {
   background-color: transparent;
   padding: 0;
+}
+.form-input-wrapper.radio .actual-label:hover {
+  background-color: transparent;
+  color: #ffffff;
 }
 .form-input-wrapper.radio.list {
   flex-flow: column nowrap;
@@ -545,6 +736,63 @@ footer a:hover {
   .booking-slider-form-container .slider-wrapper .slider-elem {
     padding: 20px;
   }
+}
+.split-page h1 {
+  margin: 0;
+}
+.split-page .split-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0;
+}
+.split-page .split-container > div:last-of-type {
+  flex: 1 1 20em;
+  padding: 20px 50px;
+}
+.split-page .split-container .icon-info-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.split-page .split-container .icon-info-container .icon-elem {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px;
+}
+.split-page .split-container .icon-info-container .icon-elem svg {
+  background-color: var(--lightColor);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  fill: #fff;
+  margin: 25px 0;
+}
+.split-page .split-container p {
+  margin-bottom: 15px;
+}
+.split-page .split-container h4 {
+  color: var(--darkColor);
+}
+
+#auskunft-page .split-container > div:first-of-type {
+  flex: 1 1 15em;
+  min-height: 350px;
+  background: url("../assets/mood-1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#auswahl-page .split-container > div:first-of-type {
+  flex: 1 1 15em;
+  min-height: 350px;
+  background: url("../assets/mood-9.jpg") no-repeat center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

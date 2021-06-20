@@ -2,8 +2,9 @@
 if($_POST['mail'] != '') {
     $name = htmlspecialchars(stripslashes(trim($_POST['name'])));
     $email = htmlspecialchars(stripslashes(trim($_POST['mail'])));
+    $adress = htmlspecialchars(stripslashes(trim($_POST['adress'])));
     $date = htmlspecialchars(stripslashes(trim($_POST['appointment'])));
-    $body = " Name: $name\n E-mail: $email\n Termin am:\n $date";
+    $body = " Name: $name\n Adresse: $adress\n Termin am: $date";
     mail( $email, 'Impfzentrum Berlin | Termin - ' . $date, $body);
 }
 ?>

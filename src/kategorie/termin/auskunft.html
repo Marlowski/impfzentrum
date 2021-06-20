@@ -1,42 +1,38 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Marlon Kerth">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/sanitize.css" rel="stylesheet">
-    <link rel="icon" href="assets/icons/iz-logo-icon.svg">
+    <link rel="icon" href="../../assets/icons/iz-logo-icon.svg">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="scripts/script.js"></script>
-    <link href="styles/style.css" rel="stylesheet">
-    <!-- slider library -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <link href="../../styles/style.css" rel="stylesheet">
     <!-- font (europa Adobe Font) -->
     <link rel="stylesheet" href="https://use.typekit.net/jby6hqc.css">
-    <title>Impfzentrum Berlin</title>
+    <title>Impfzentrum Berlin | Auskunft</title>
 </head>
-<body id="landing-page">
-    <header>
-        <a class="nav-img-holder" href="index.html">
-            <img src="assets/icons/iz-logo-default.svg" alt="Impfzentrum Berlin">
+<body id="auskunft-page" class="default-text-page title-start split-page">
+    <header class="dark-header">
+        <a class="nav-img-holder" href="../../index.html">
+            <img src="../../assets/icons/iz-logo-dark.svg" alt="Impfzentrum Berlin">
         </a>
         <ul class="nav-big-screen">
             <li>
                 <a>Termine</a>
                 <div class="nav-dropdown">
-                    <a href="kategorie/termin/buchen.php">Termin buchen</a>
-                    <a href="kategorie/termin/standorte.html">Standorte / Öffnungszeiten</a>
-                    <a href="kategorie/termin/auskunft.html">Auskunft</a>
+                    <a>Termin buchen</a>
+                    <a>Standorte / Öffnungszeiten</a>
+                    <a>Auskunft</a>
                 </div>
             </li>
             <li>
                 <a>Impfstoff</a>
                 <div class="nav-dropdown">
-                    <a href="kategorie/impfstoff/vergleich.html">Vergleich</a>
-                    <a href="kategorie/impfstoff/verfuegbarkeit.html">Verfügbarkeit</a>
-                    <a href="kategorie/impfstoff/auswahl.html">Wahlmöglichkeit</a>
+                    <a>Vergleich</a>
+                    <a>Verfügbarkeit</a>
+                    <a>Wahlmöglichkeit</a>
                 </div>
             </li>
             <li>
@@ -120,25 +116,33 @@
             </li>
         </ul>
     </header>
-    <main>
-        <div class="split-container">
-            <div>
-                <h1>Das Impfzentrum Berlin ist täglich von <span>08:00 - 18:00 Uhr</span> für Sie da.</h1>
-                <button class="default-btn big">Termin buchen</button>
+    <main class="split-container">
+        <div></div>
+        <div>
+            <h1>Auskunft</h1>
+            <h3>Wir helfen Ihnen gerne weiter!</h3>
+            <div class="icon-info-container">
+                <div class="icon-elem">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57-.1-.04-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1z"/></svg>
+                    <h4>Telefon</h4>
+                    <p>0123 456789</p>
+                </div>
+                <div class="icon-elem">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+                    <h4>Email</h4>
+                    <p>info@impfzentrum.de</p>
+                </div>
+                <div class="icon-elem">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm6-1.8C18 6.57 15.35 4 12 4s-6 2.57-6 6.2c0 2.34 1.95 5.44 6 9.14 4.05-3.7 6-6.8 6-9.14zM12 2c4.2 0 8 3.22 8 8.2 0 3.32-2.67 7.25-8 11.8-5.33-4.55-8-8.48-8-11.8C4 5.22 7.8 2 12 2z"/></svg>
+                    <h4>Info Center</h4>
+                    <p>Straße 21, 12345 Berlin</p>
+                </div>
             </div>
-            <div></div>
-        </div>
-        <div class="brand-logos-container">
-            <img src="assets/vac-logos/Biontech.png" alt="Biontech"/>
-            <img src="assets/vac-logos/astra.png" alt="Astra"/>
-            <img src="assets/vac-logos/JJ.png" alt="Jonson & Jonson"/>
-            <img src="assets/vac-logos/moderna.png" alt="Moderna"/>
-            <img src="assets/vac-logos/Pfizer.png" alt="pfizer"/>
         </div>
     </main>
     <footer>
-        <a href="impressum.html">Impressum</a>
-        <a href="datenschutz.html">Datenschutz</a>
+        <a href="../../impressum.html">Impressum</a>
+        <a href="../../datenschutz.html">Datenschutz</a>
     </footer>
 </body>
 </html>

@@ -1,0 +1,59 @@
+@use "mixins";
+
+.split-page {
+  h1 {
+    margin: 0;
+  }
+
+  .split-container {
+    @include mixins.flex-box($align-items: stretch);
+    padding: 0;
+
+    & > div:last-of-type {
+      flex: 1 1 20em;
+      padding: 20px 50px;
+    }
+
+    .icon-info-container {
+      @include mixins.flex-box();
+      margin: 50px 0;
+
+      .icon-elem {
+        @include mixins.flex-box($flex-direction: column);
+        margin: 0 25px;
+
+        svg {
+          background-color: var(--lightColor);
+          border-radius: 50%;
+          width: 100px;
+          height: 100px;
+          padding: 20px;
+          fill: #fff;
+          margin: 25px 0;
+        }
+      }
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    h4 {
+      color: var(--darkColor);
+    }
+  }
+}
+
+#auskunft-page .split-container > div:first-of-type {
+  flex: 1 1 15em;
+  min-height: 350px;
+  background: url('../assets/mood-1.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#auswahl-page .split-container > div:first-of-type {
+  flex: 1 1 15em;
+  min-height: 350px;
+  background: url('../assets/mood-9.jpg') no-repeat center;
+  background-size: cover;
+}
