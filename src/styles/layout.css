@@ -1,0 +1,9 @@
+/* landing page */
+#landing-page {
+  background-color: var(--lightColor);
+}
+#landing-page main {
+  height: calc(100vh - 90px);
+}
+
+/*# sourceMappingURL=layout.css.map */

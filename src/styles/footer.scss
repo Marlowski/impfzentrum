@@ -1,0 +1,23 @@
+@use "mixins";
+
+footer {
+  width: 100%;
+  min-height: 50px;
+  @include mixins.flex-box($justify-content: flex-end);
+  color: #ffffff;
+  background-color: var(--darkColor);
+  padding: 0 50px;
+
+  a:last-of-type {
+    margin-right: 0;
+  }
+  a {
+    font-size: 1.1rem;
+    margin: 10px 10px;
+    transition: color .2s ease-in-out;
+
+    &:hover {
+      color: var(--accentColor);
+    }
+  }
+}

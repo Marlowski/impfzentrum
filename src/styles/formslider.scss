@@ -1,0 +1,163 @@
+@use "mixins";
+
+.contains-slider {
+  position: relative;
+}
+
+.booking-slider-form-container {
+  height: calc(100vh - 90px);
+  width: 100%;
+  overflow: hidden;
+
+  .slider-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: var(--darkColor);
+
+    .slider-elem {
+      width: 100%;
+      height: 100%;
+      @include mixins.flex-box($flex-direction: column);
+      padding: 50px;
+      text-align: center;
+      color: #fff;
+
+      h1 {
+        color: #fff;
+        margin-bottom: 10px;
+      }
+      h3 {
+        color: var(--lightColor);
+        margin-bottom: 30px;
+      }
+
+      .form-notice {
+        color: var(--accentColor);
+      }
+    }
+  }
+
+  .slick-list, .slick-track {
+    height: 100% !important;
+  }
+}
+
+.slider-prev {
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  z-index: 101;
+}
+
+.form-input-wrapper.radio {
+  margin-top: 50px;
+  @include mixins.flex-box();
+
+.actual-label {
+  background-color: transparent;
+  padding: 0;
+}
+
+  &.list {
+    flex-flow: column nowrap;
+    width: 550px;
+    max-width: 95%;
+
+    #appointment-start {
+      opacity: 1;
+      position: relative;
+      width: 100%;
+      height: 40px;
+      font-family: 'europa', sans-serif;
+      font-size: 1.2rem;
+      background: var(--lightColor);
+      color: #fff;
+      border: none;
+      padding: 0 15px;
+    }
+
+    label {
+      width: 100%;
+      margin: 7px 10px;
+
+      &:hover {
+        background-color: var(--accentColorHover);
+      }
+    }
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  input:checked + label {
+    background-color: var(--accentColorHover);
+  }
+
+  label {
+    margin: 10px;
+    position: relative;
+    padding: 10px 25px;
+    border-radius: 50px;
+    background-color: var(--accentColor);
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+  }
+}
+
+.form-input-wrapper.text {
+  @include mixins.flex-box($flex-direction: column);
+  width: 400px;
+  max-width: 90%;
+
+  .label-input-wrapper {
+    @include mixins.flex-box($flex-direction: column, $align-items: flex-start);
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  label {
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: 300;
+  }
+
+  input:not(input[type="submit"]) {
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    background: var(--lightColor);
+    height: 35px;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 7px 0;
+  }
+}
+
+#submit-page main {
+  background-color: var(--darkColor);
+  @include mixins.flex-box();
+
+  div {
+    text-align: center;
+  }
+
+  h1 {
+    color: #fff;
+  }
+
+  h3 {
+    margin-top: 30px;
+    color: var(--lightColor);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .booking-slider-form-container .slider-wrapper .slider-elem {
+    padding: 20px;
+  }
+}

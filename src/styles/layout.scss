@@ -1,0 +1,80 @@
+@use "mixins";
+
+/* landing page */
+#landing-page {
+  background-color: var(--lightColor);
+
+  main {
+    min-height: calc(100vh - 90px);
+    height: 100%;
+    background: url('../assets/mood-2.jpg') no-repeat 70%;
+    background-size: cover;
+  }
+
+  .split-container {
+    @include mixins.flex-box();
+    height: calc(80vh - 90px);
+    padding: 25px 50px;
+
+    & > div:last-of-type {
+      flex: 1 1 10em
+    }
+    & > div:first-of-type {
+      flex: 1 1 25em;
+
+      h1 {
+        color: #ffffff;
+        margin-bottom: 10px;
+
+        span {
+          white-space: nowrap;
+          color: var(--darkColor);
+        }
+      }
+    }
+  }
+
+  .brand-logos-container {
+    @include mixins.flex-box();
+    width: 100%;
+    background-color: var(--darkColorBgOverlay);
+    min-height: 20vh;
+
+    img {
+      filter: brightness(0) invert(1);
+      width: 15%;
+      min-width: 150px;
+      max-width: 190px;
+      margin: 15px 2.5%;
+    }
+  }
+}
+
+/* default content pages */
+.default-text-page {
+  main {
+    min-height: calc(100vh - (90px + 50px));
+    padding: 30px 50px;
+
+    article {
+      div {
+        margin: 10px 0;
+      }
+
+      h1 {
+        color: var(--lightColor);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #landing-page .split-container {
+    padding: 20px;
+    background-color: var(--lightColorBgOverlay);
+  }
+
+  .default-text-page main {
+    padding: 20px 25px;
+  }
+}

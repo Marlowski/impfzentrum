@@ -1,0 +1,49 @@
+<svg id="Main_Logo" data-name="Main Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="165" height="714" viewBox="0 0 165 714">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+        stroke: #1d495e;
+      }
+
+      .cls-1, .cls-4 {
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 20px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #51bac0;
+      }
+
+      .cls-4 {
+        stroke-width: 15px;
+      }
+    </style>
+  </defs>
+  <g id="icon">
+    <g id="Icon-2" data-name="Icon">
+      <g id="bottom">
+        <path id="Form_2" data-name="Form 2" class="cls-1" d="M30.92,699.416H125.7"/>
+        <image id="Form_1" data-name="Form 1" y="585" width="165" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKUAAAAUCAYAAADsvf0KAAABSklEQVRoge3aMUoDQRSH8S/jdt4gwUoC2lvqAdJoUokg9gHFUjxCrLRKrhBFMXqN9FY2QryBTVCUJ2913d0mCJkp/j9YCGSZ5n0s2cw01jpH1MiAnl9bQBNYrd4mspA34BWYAnfAPfBeXiCrWXEXGAAblW9E/scebG2/DoAn4Ax4LK4aSp8vgYmClCXZBB68u58Wi0/KK+BY05AIToEV4IRCnT0FKZFZf108ysx/Q4rEdmE9Bq+zrXFIAqzDbh6lSCr2LMptjUMSsmNRtjQRSUgzaBqSmEbwbR+RVMyC70OKpGIafFNcJBUTi3IMPGskkgDrcGxRzoFzTUQSYB3O87fvG2CoqUhEQ+/wz9E1O6Ex0lQkglF+QohSlB9AH9i313JNRpZg5r31vb9vdX+eXwPrwCFwC7wAn5W7RBZnHVlP1pX1ZZ1Zb7+AL5OnMBTFt0FoAAAAAElFTkSuQmCC"/>
+        <path id="Form_1-2" data-name="Form 1" class="cls-2" d="M78.309,595.153v109"/>
+      </g>
+      <g id="body">
+        <path id="filling" class="cls-3" d="M21.444,410.323c9.4,6.723,19.688,11.025,30.8,11.848,18.264,1.353,38.743-9.935,47.394-11.848,12.7-2.808,26.085-2.8,40.284,0q-1.178,88.862-2.371,177.722L21.444,590.414V410.323Z"/>
+        <path id="body-2" data-name="body" class="cls-2" d="M80.567,201.94c9.672-.854,19.251,2.23,23.636,9.475a17.413,17.413,0,0,1,2.361,7.107v42.631h14.185c5.8,0,10.718,1.466,14.174,4.738,6.024,5.7,5.052,14.421,4.733,28.426-0.113,4.724-.113,9.384,0,14.212,0.781,94.753-.8,189.506,0,284.258H21.488v-289c-0.054-3.194-.054-6.3,0-9.475,0.255-15.013,2.008-24.049,7.09-28.426,4.237-3.645,10.04-5.075,16.541-4.738H56.941V218.522a17.561,17.561,0,0,1,2.357-7.107C63.442,204.558,72.059,201.554,80.567,201.94Z"/>
+        <path id="Form_3" data-name="Form 3" class="cls-2" d="M106.746,261.036H56.986"/>
+        <image id="Lines" x="71" y="320" width="77" height="217" xlink:href="data:img/png;base64,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"/>
+      </g>
+      <g id="top">
+        <path id="Form_4" data-name="Form 4" class="cls-4" d="M81.667,196.362V82.708"/>
+      </g>
+      <path id="Form_5" data-name="Form 5" class="cls-3" d="M88.005,45.434C86.263,20.364,98.66,2.585,109.623.6c9.908-1.792,21.613,8.772,20.832,18.8C129.591,30.5,113.143,44.627,88.005,45.434Z"/>
+    </g>
+  </g>
+</svg>
