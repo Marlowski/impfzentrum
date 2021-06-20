@@ -1,5 +1,5 @@
 <?php
-if($_POST['mail'] !== '') {
+if($_POST['mail'] != '') {
     $name = htmlspecialchars(stripslashes(trim($_POST['name'])));
     $email = htmlspecialchars(stripslashes(trim($_POST['mail'])));
     $date = htmlspecialchars(stripslashes(trim($_POST['appointment'])));
