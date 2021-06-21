@@ -161,6 +161,14 @@
   }
 }
 
+.input-error {
+  background-color: #ffeded !important;
+
+  &::placeholder {
+    color: red;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .booking-slider-form-container .slider-wrapper .slider-elem {
     padding: 20px;

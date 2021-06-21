@@ -141,6 +141,10 @@ header.dark-header {
   }
 }
 
+#mobile-nav-menu-btn-open {
+  display: none;
+}
+
 @media screen and (max-width: 1100px) {
   .nav-small-screen {
     display: block;

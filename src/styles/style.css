@@ -282,6 +282,10 @@ header.dark-header .nav-big-screen li a {
   font-size: 1.2rem;
 }
 
+#mobile-nav-menu-btn-open {
+  display: none;
+}
+
 @media screen and (max-width: 1100px) {
   .nav-small-screen {
     display: block;
@@ -350,8 +354,20 @@ header.dark-header .nav-big-screen li a {
   min-height: calc(100vh - (90px + 50px));
   padding: 30px 50px;
 }
-.default-text-page main article div {
+.default-text-page main article div, .default-text-page main article section {
   margin: 10px 0;
+}
+.default-text-page main article div p, .default-text-page main article section p {
+  margin: 20px 0;
+}
+.default-text-page main article section {
+  padding: 10px 20px;
+}
+.default-text-page main article section h2 {
+  color: var(--darkColor);
+}
+.default-text-page main article section:nth-of-type(2n) {
+  background-color: var(--whiteColor);
 }
 
 /* list style boxes */
@@ -376,6 +392,7 @@ header.dark-header .nav-big-screen li a {
   padding: 0 15px;
   margin-top: 15px;
   color: var(--darkColor);
+  position: relative;
 }
 .flex-box-wrapper .flex-elem .info-wrapper {
   display: flex;
@@ -398,6 +415,14 @@ header.dark-header .nav-big-screen li a {
   min-width: 100%;
   min-height: 100%;
   max-width: 350px;
+}
+.flex-box-wrapper .flex-elem .background-wrapper {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--whiteColor);
+  color: var(--darkColor);
+  margin: 10px 0 -15px 0;
+  min-height: 150px;
 }
 
 /* title starts */
@@ -427,6 +452,9 @@ header.dark-header .nav-big-screen li a {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-start;
+}
+.table-container li h3 {
+  z-index: 100;
 }
 .table-container h4 {
   position: relative;
@@ -535,6 +563,30 @@ header.dark-header .nav-big-screen li a {
   margin: 5px 0;
 }
 
+.solo-text-block {
+  padding: 15px 50px;
+}
+.solo-text-block.center {
+  text-align: center;
+}
+
+.new-section-title {
+  margin: 25px 0 2px 0;
+}
+
+.fullscreen-img-wrapper {
+  overflow: hidden;
+  max-height: 350px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.fullscreen-img-wrapper img {
+  max-width: unset;
+  width: 100%;
+}
+
 @media screen and (max-width: 500px) {
   #landing-page .split-container {
     padding: 20px;
@@ -551,6 +603,10 @@ header.dark-header .nav-big-screen li a {
 
   .box-layout-container .box-elem a.mobil {
     display: block;
+  }
+
+  .solo-text-block {
+    padding: 15px 25px;
   }
 }
 footer {
@@ -732,6 +788,13 @@ footer a:hover {
   color: var(--lightColor);
 }
 
+.input-error {
+  background-color: #ffeded !important;
+}
+.input-error::placeholder {
+  color: red;
+}
+
 @media screen and (max-width: 500px) {
   .booking-slider-form-container .slider-wrapper .slider-elem {
     padding: 20px;
@@ -781,6 +844,38 @@ footer a:hover {
   color: var(--darkColor);
 }
 
+.team-icons-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.team-icons-container .icon-elem {
+  margin: 15px;
+  flex: 0 0 7em;
+  text-align: center;
+  color: var(--darkColor);
+}
+.team-icons-container .icon-elem .icon-img-wrapper {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--lightColor);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.team-icons-container .icon-elem .icon-img-wrapper img {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: unset;
+}
+
 #auskunft-page .split-container > div:first-of-type {
   flex: 1 1 15em;
   min-height: 350px;
@@ -792,6 +887,34 @@ footer a:hover {
   flex: 1 1 15em;
   min-height: 350px;
   background: url("../assets/mood-9.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#symptome-page .split-container > div:first-of-type {
+  flex: 1 1 15em;
+  min-height: 350px;
+  background: url("../assets/mood-7.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#infektion-page .split-container > div:first-of-type {
+  flex: 1 1 15em;
+  min-height: 350px;
+  background: url("../assets/mood-3.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#hygiene-page .split-container > div:first-of-type {
+  flex: 1 1 15em;
+  min-height: 350px;
+  background: url("../assets/mood-6.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#team-page .split-container > div:first-of-type {
+  flex: 1 1 15em;
+  min-height: 350px;
+  background: url("../assets/mood-5.jpg") no-repeat center;
   background-size: cover;
 }
 

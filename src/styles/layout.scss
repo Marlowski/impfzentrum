@@ -57,8 +57,22 @@
     padding: 30px 50px;
 
     article {
-      div {
+      div, section {
         margin: 10px 0;
+
+        p {
+          margin: 20px 0;
+        }
+      }
+      section {
+        padding: 10px 20px;
+
+        h2 {
+          color: var(--darkColor);
+        }
+      }
+      section:nth-of-type(2n) {
+        background-color: var(--whiteColor);
       }
     }
   }
@@ -83,6 +97,7 @@
       padding: 0 15px;
       margin-top: 15px;
       color: var(--darkColor);
+      position: relative;
     }
 
     .info-wrapper {
@@ -106,6 +121,15 @@
         min-height: 100%;
         max-width: 350px;
       }
+    }
+
+    .background-wrapper {
+      width: 100%;
+      padding: 15px;
+      background-color: var(--whiteColor);
+      color: var(--darkColor);
+      margin: 10px 0 -15px 0;
+      min-height: 150px;
     }
   }
 }
@@ -133,6 +157,10 @@
     padding: 10px 10px 10px 25px;
     width: 100%;
     @include mixins.flex-box($flex-direction: column, $align-items: flex-start);
+
+    h3 {
+      z-index: 100;
+    }
   }
 
   h4 {
@@ -249,6 +277,29 @@
   }
 }
 
+.solo-text-block {
+  padding: 15px 50px;
+
+  &.center {
+    text-align: center;
+  }
+}
+
+.new-section-title {
+  margin: 25px 0 2px 0;
+}
+
+.fullscreen-img-wrapper {
+  overflow: hidden;
+  max-height: 350px;
+  @include mixins.flex-box($flex-direction: column);
+
+  img {
+    max-width: unset;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 500px) {
   #landing-page .split-container {
     padding: 20px;
@@ -264,5 +315,8 @@
   }
   .box-layout-container .box-elem a.mobil {
     display: block;
+  }
+  .solo-text-block {
+    padding: 15px 25px;
   }
 }

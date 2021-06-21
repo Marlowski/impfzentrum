@@ -44,6 +44,35 @@
   }
 }
 
+.team-icons-container {
+  width: 100%;
+  @include mixins.flex-box();
+  margin: 20px 0;
+
+  .icon-elem {
+    margin: 15px;
+    flex: 0 0 7em;
+    text-align: center;
+    color: var(--darkColor);
+
+    .icon-img-wrapper {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid var(--lightColor);
+      @include mixins.flex-box($flex-direction: column);
+      margin-bottom: 15px;
+
+      img {
+        min-width: 100%;
+        min-height: 100%;
+        max-width: unset;
+      }
+    }
+  }
+}
+
 #auskunft-page .split-container > div:first-of-type {
   flex: 1 1 15em;
   min-height: 350px;
@@ -55,5 +84,33 @@
   flex: 1 1 15em;
   min-height: 350px;
   background: url('../assets/mood-9.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#symptome-page .split-container > div:first-of-type {
+  flex: 1 1 15em;
+  min-height: 350px;
+  background: url('../assets/mood-7.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#infektion-page .split-container > div:first-of-type {
+  flex: 1 1 15em;
+  min-height: 350px;
+  background: url('../assets/mood-3.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#hygiene-page .split-container > div:first-of-type {
+  flex: 1 1 15em;
+  min-height: 350px;
+  background: url('../assets/mood-6.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#team-page .split-container > div:first-of-type {
+  flex: 1 1 15em;
+  min-height: 350px;
+  background: url('../assets/mood-5.jpg') no-repeat center;
   background-size: cover;
 }
