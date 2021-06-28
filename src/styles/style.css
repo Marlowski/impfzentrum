@@ -147,6 +147,35 @@ p {
     font-size: 1.15rem;
   }
 }
+/* above header */
+.above-header-info-banner {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 50px;
+  color: #ffffff;
+  background-color: var(--darkColor);
+}
+.above-header-info-banner div:first-of-type {
+  margin-right: 25px;
+}
+.above-header-info-banner div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1rem;
+}
+.above-header-info-banner div svg {
+  fill: #fff;
+  margin-right: 7px;
+  width: 20px;
+  height: 20px;
+}
+
 /* header */
 .nav-small-screen {
   display: none;
@@ -916,6 +945,30 @@ footer a:hover {
   min-height: 350px;
   background: url("../assets/mood-5.jpg") no-repeat center;
   background-size: cover;
+}
+
+#standorte-page .flex-elem .img-wrapper {
+  position: relative;
+}
+#standorte-page .flex-elem .img-wrapper::after {
+  content: "Lage anzeigen";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--darkColor);
+  color: var(--accentColor);
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+#standorte-page .flex-elem .img-wrapper:hover::after {
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=style.css.map */

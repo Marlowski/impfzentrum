@@ -114,3 +114,26 @@
   background: url('../assets/mood-5.jpg') no-repeat center;
   background-size: cover;
 }
+
+#standorte-page {
+  .flex-elem .img-wrapper {
+    position: relative;
+  }
+  .flex-elem .img-wrapper::after {
+    content: "Lage anzeigen";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--darkColor);
+    color: var(--accentColor);
+    opacity: 0;
+    transition: opacity .2s ease-out;
+    @include mixins.flex-box();
+    font-size: 1.2rem;
+  }
+  .flex-elem .img-wrapper:hover::after {
+    opacity: .9;
+  }
+}
