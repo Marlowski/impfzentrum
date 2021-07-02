@@ -49,10 +49,11 @@ header {
   }
 
   .nav-big-screen {
-    @include mixins.flex-box();
+    @include mixins.flex-box($justify-content: flex-end);
     height: 100%;
     width: 100%;
     max-width: 900px;
+    margin-right: 25px;
 
     li {
       position: relative;
