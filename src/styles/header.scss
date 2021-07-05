@@ -171,7 +171,7 @@ header.dark-header {
   display: none;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
   .above-header-info-banner {
     justify-content: center;
     padding-right: 0;
@@ -180,7 +180,7 @@ header.dark-header {
     margin-right: 20px;
   }
   .above-header-info-banner div p {
-    font-size: .9rem;
+    font-size: 1rem;
   }
 }
 

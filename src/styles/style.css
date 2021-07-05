@@ -316,7 +316,7 @@ header.dark-header .nav-big-screen li a {
   display: none;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
   .above-header-info-banner {
     justify-content: center;
     padding-right: 0;
@@ -327,7 +327,7 @@ header.dark-header .nav-big-screen li a {
   }
 
   .above-header-info-banner div p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 1100px) {
