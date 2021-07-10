@@ -199,6 +199,7 @@ header .nav-img-holder {
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 8px 0;
 }
 header .nav-img-holder img {
   max-height: 80%;

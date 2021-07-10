@@ -42,6 +42,7 @@ header {
   .nav-img-holder {
     @include mixins.flex-box();
     height: 100%;
+    padding: 8px 0;
 
     img {
       max-height: 80%;
